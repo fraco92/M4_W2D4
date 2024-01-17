@@ -47,6 +47,7 @@ const showBooks = () => {
             <h5 class="card-title">${book.title}</h5>
             <p class="card-text mb-1">Price: ${book.price} €</p>
             <p class="card-text mb-1">Category: ${book.category}</p>
+            <a class="btn btn-primary" href="details.html?id=${book.asin}" target="_blank">Detail</a>
             <a class="btn btn-primary" onclick="hideBook('${book.title}')">Hide</a>
             <a class="btn btn-primary" onclick="toggleCart('${book.title}')">${cartAction} Cart</a>
           </div>
